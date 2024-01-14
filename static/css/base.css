@@ -1,0 +1,8 @@
+.card {
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+p #delete_post {
+    color: red;
+}
