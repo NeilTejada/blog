@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home{% endblock title %}
 
 {%block content %}
-<h1>Home</h1>
-<p>Welcome to my blog</p>
+<h1>Welcome to It's All About BBQ!</h1>
+<h2>This blog is all about BBQ.</h2>
+<p>Here you will find posts all about BBQ. You will find posts about grilling, smoking, prepping your food before your cook, and so much more! </p>
+<img src=" {% static 'img/bbqtime.jpeg' %}" id="bbqtime_image">
 {% endblock content %}
