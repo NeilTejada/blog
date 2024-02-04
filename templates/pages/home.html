@@ -3,9 +3,19 @@
 
 {% block title %}Home{% endblock title %}
 
-{%block content %}
-<h1>Welcome to It's All About BBQ!</h1>
-<h2>This blog is all about BBQ.</h2>
-<p>Here you will find posts all about BBQ. You will find posts about grilling, smoking, prepping your food before your cook, and so much more! </p>
-<img src=" {% static 'img/bbqtime.jpeg' %}" id="bbqtime_image">
+{% block content %}
+<div class="container">
+    <h1>Welcome to It's All About BBQ!</h1>
+    <h2>This blog is all about BBQ.</h2>
+    <p>This blog project allows registered users to:</p>
+    <ul>
+        <li>Add new posts</li>
+        <li>Edit their posts</li>
+        <li>Delete their posts</li>
+        <li>Reset their password if forgotten</li>
+        <li>Reset their password while logged in</li>
+    </ul>
+    <p>As a guest (not logged in), you can view posts but cannot modify them.</p>
+    <img src="{% static 'img/bbqtime.jpeg' %}" id="bbqtime_image">
+</div>
 {% endblock content %}
